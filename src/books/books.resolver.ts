@@ -28,7 +28,7 @@ export class BooksResolver {
   }
 
   @Mutation((returns) => Boolean)
-  async removeBook(@Args('id') id: number) {
+  removeBook(@Args('id') id: number) {
     return this.booksService.remove(id);
   }
 }
